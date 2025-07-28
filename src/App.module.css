@@ -7,18 +7,19 @@ body {
     font-family: sans-serif;
     color: #1f2937;
     min-height: 100vh;
-
+    max-width: 95vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
 }
 
 .title {
     font-size: 2.5rem;
-    font-weight: bold;
-    color: #0ea5e9;
+    font-weight: 600;
+    text-align: center;
+    color: #284368;
     margin-bottom: 1rem;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .section {
@@ -36,10 +37,23 @@ body {
 .link {
     color: #3b82f6;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #1d4ed8;
 }
 
 .section ul {
     display: flex;
     flex-direction: column;
     gap: 1rem
+}
+
+.pictureDiv img {
+    border-radius: 10svw;
+    object-fit: cover;
+    border-radius: 9999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 15svw;
 }

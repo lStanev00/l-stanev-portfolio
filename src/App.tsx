@@ -4,6 +4,9 @@ function App() {
     return (
         <main className={styles.main}>
             <h1 className={styles.title}>Lachezar Stanev</h1>
+            <div className={styles.pictureDiv}>
+                <img src="/pictures/me.jpg" alt="Lachezar Stanev Picture" />
+            </div>
             <p>Full-stack Developer | TypeScript | React | Node.js</p>
 
             <section className={styles.section}>

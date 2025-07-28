@@ -4,7 +4,7 @@ function App() {
     return (
         <main className={styles.main}>
             <h1 className={styles.title}>Lachezar Stanev</h1>
-            <p>Full-stack Developer | JavaScript | React | Node.js</p>
+            <p>Full-stack Developer | TypeScript | React | Node.js</p>
 
             <section className={styles.section}>
                 <h2>Projects</h2>

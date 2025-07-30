@@ -1,12 +1,14 @@
 import styles from './App.module.css';
-import Banner from './componenets/banner';
+import Banner from './componenets/banner/Banner';
+import Projects from './componenets/projects/Projects';
 
 function App() {
     return (
         <main className={styles.main}>
 
             <Banner />
-            <section style={{
+            <Projects />
+            {/* <section style={{
                 marginTop: "5%"
             }} className={styles.section}>
                 <h2>Projects</h2>
@@ -18,9 +20,15 @@ function App() {
                     </li>
                     <li>
                         <strong>Daniela Staneva</strong> — Kindergarten teacher secured portfolio website
+                        <video
+                            src="/video/shopify-widget.mp4"
+                            controls
+                            className={styles.videoWidget}
+                        />
+
                     </li>
                 </ul>
-            </section>
+            </section> */}
 
             <section className={styles.section}>
                 <h2>Contact</h2>

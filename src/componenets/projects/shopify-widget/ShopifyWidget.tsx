@@ -3,7 +3,7 @@ export default function ShopifyWidget () {
 
     return(
             <div className={styles.projectSection}>
-                <span className={styles.projectTitle}>Shopify Cart Widget & Product Page</span>
+                <span className={styles.projectTitle}>PvP Scalpel – Guild PvP Analytics Web App</span>
                 <div className={styles.projectBody}>
 
                     <div className={styles.projectDescription}>

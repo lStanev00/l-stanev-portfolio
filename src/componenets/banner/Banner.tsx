@@ -13,7 +13,7 @@ export default function Banner () {
             
             <div className={styles.pictureDiv}>
 
-                <img className={styles.techStack} src='/tech-ico/static.png' alt='Tech Stack Annimation' />
+                <img className={styles.techStack} src='/tech-ico/static.png' alt='Tech Stack Picture' />
                 <img className={styles.profilePic} src="/pictures/me.jpg" alt="Lachezar Stanev Picture" />
 
             </div>

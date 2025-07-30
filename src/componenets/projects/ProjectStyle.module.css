@@ -58,6 +58,25 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+.projectDescription a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0ea5e9;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.projectDescription a:hover {
+    background-color: #0284c7;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .projectBody {

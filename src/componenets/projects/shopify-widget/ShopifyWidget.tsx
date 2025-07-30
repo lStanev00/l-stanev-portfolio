@@ -1,4 +1,4 @@
-import styles from "./ShopifyWidget.module.css"
+import styles from "../ProjectStyle.module.css"
 export default function ShopifyWidget () {
 
     return(

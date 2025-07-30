@@ -1,0 +1,53 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 3vw;
+    /* margin-top: 4vh; */
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #284368;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.coTitle {
+    text-align: center;
+}
+
+.profilePic {
+    border-radius: 10svw;
+    object-fit: cover;
+    border-radius: 9999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 10svw;
+}
+
+.pictureDiv {
+    position: relative;
+    width: fit-content;
+}
+
+.bannerAnimation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20svw;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .bannerAnimation {
+        width: 40vw;
+    }
+    .profilePic {
+        width: 20vw;
+    }
+}

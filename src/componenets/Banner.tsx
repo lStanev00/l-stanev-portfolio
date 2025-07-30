@@ -1,0 +1,24 @@
+import styles from "./banner.module.css"
+export default function Banner () {
+    return (
+    <div className={styles.banner}>
+
+            <div className={styles.heroTitle}>
+
+                <h1 className={styles.title}>Lachezar Stanev</h1>
+                <p className={styles.coTitle}>Full-stack Developer</p>
+
+            </div>
+
+            
+            <div className={styles.pictureDiv}>
+
+                <img className={styles.bannerAnimation} src='/tech-ico/banner-animation.webp' alt='Tech Stack Annimation' />
+                <img className={styles.profilePic} src="/pictures/me.jpg" alt="Lachezar Stanev Picture" />
+
+            </div>
+            
+
+    </div>
+    )
+}

@@ -1,9 +1,11 @@
 import styles from "./projects.module.css"
+import PvPScalpel from "./PvP-Scalpel/PvPScalpel"
 import ShopifyWidget from "./shopify-widget/ShopifyWidget"
 export default function Projects() {
 
     const projectsArr = [
-        ShopifyWidget
+        ShopifyWidget,
+        PvPScalpel
     ]
 
     return (

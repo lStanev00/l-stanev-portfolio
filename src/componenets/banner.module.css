@@ -42,12 +42,3 @@
     width: 20svw;
     pointer-events: none;
 }
-
-@media (max-width: 600px) {
-    .bannerAnimation {
-        width: 40vw;
-    }
-    .profilePic {
-        width: 20vw;
-    }
-}

@@ -28,7 +28,7 @@ export default function PvPScalpel() {
                     </div>
 
                     <video
-                        src="/video/shopify-widget.mp4"
+                        src="/video/PvP-Scalpel.mp4"
                         controls
                         className={styles.videoWidget}
                     />

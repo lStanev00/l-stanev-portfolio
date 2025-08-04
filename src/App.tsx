@@ -5,30 +5,8 @@ import Projects from './componenets/projects/Projects';
 function App() {
     return (
         <main className={styles.main}>
-
             <Banner />
             <Projects />
-            {/* <section style={{
-                marginTop: "5%"
-            }} className={styles.section}>
-                <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <strong>PvP Scalpel</strong> — WoW PvP tracker<br />
-                        <a className={styles.link} href="https://pvpscalpel.com" target="_blank">Live Site</a> |{' '}
-                        <a className={styles.link} href="https://github.com/lStanev00/WoW-Guild-Page">GitHub</a>
-                    </li>
-                    <li>
-                        <strong>Daniela Staneva</strong> — Kindergarten teacher secured portfolio website
-                        <video
-                            src="/video/shopify-widget.mp4"
-                            controls
-                            className={styles.videoWidget}
-                        />
-
-                    </li>
-                </ul>
-            </section> */}
 
             <section className={styles.section}>
                 <h2>Contact</h2>

@@ -1,7 +1,7 @@
 import styles from './App.module.css';
 import Banner from './componenets/banner/Banner';
 import Projects from './componenets/projects/Projects';
-import Qualifications from './componenets/qualifications/qualifications';
+import Qualifications from './componenets/qualifications/Qualifications';
 
 function App() {
     return (

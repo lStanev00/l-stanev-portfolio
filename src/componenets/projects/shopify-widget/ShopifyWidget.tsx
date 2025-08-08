@@ -31,3 +31,5 @@ export default function ShopifyWidget () {
             </div>
     )
 }
+
+ShopifyWidget.getName = () => {return "Shopify Widget"}

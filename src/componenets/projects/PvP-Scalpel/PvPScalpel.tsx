@@ -37,3 +37,5 @@ export default function PvPScalpel() {
             </div>
     )
 }
+
+PvPScalpel.getName = () => {return "PvP Scalpel"}

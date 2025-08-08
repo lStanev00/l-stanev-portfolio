@@ -19,3 +19,29 @@
     color: #0f172a;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.03);
 }
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-bottom: 1vh;
+}
+.button {
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.15s ease;
+}
+
+.button-primary {
+    background-color: #f0c75e;
+    color: #284368;
+}
+
+.button-primary:hover {
+    background-color: #d9b14e;
+    transform: translateY(-2px);
+}

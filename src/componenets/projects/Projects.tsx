@@ -14,12 +14,12 @@ export default function Projects() {
 
     return (
         <div className={styles.projects}>
-            <h2>Projects</h2>
+            <h2>Public Projects</h2>
 
-            <div>
+            <div className={styles.buttonsWrapper}>
                 {projectsArr.map((_, index) => (
-                    <button key={index} onClick={() => setViewIndex(index)}>
-                        Show project {index + 1}
+                    <button  className={`${styles.button} ${styles["button-primary"]}`} key={index} onClick={() => setViewIndex(index)}>
+                        {_.getName()}
                     </button>
                 ))}
             </div>

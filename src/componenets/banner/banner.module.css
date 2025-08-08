@@ -4,6 +4,7 @@
     width: fit-content;
     gap: 3vw;
     align-items: center;
+    margin-top: 1vh;
 }
 
 .title {
@@ -26,6 +27,7 @@
     border-radius: 9999px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 10svw;
+    min-width: 150px;
 }
 
 .pictureDiv {
@@ -39,5 +41,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 20svw;
+    min-width: 300px;
     pointer-events: none;
+}
+
+@media (max-height: 1170px) {
+    .pictureDiv {
+        margin-top: 5vh;
+    }
 }

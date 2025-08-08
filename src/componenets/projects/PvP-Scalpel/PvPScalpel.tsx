@@ -38,4 +38,4 @@ export default function PvPScalpel() {
     )
 }
 
-PvPScalpel.getName = () => {return "PvP Scalpel"}
+PvPScalpel.getName = () => "PvP Scalpel"

@@ -32,4 +32,4 @@ export default function ShopifyWidget () {
     )
 }
 
-ShopifyWidget.getName = () => {return "Shopify Widget"}
+ShopifyWidget.getName = () => "Shopify Widget"

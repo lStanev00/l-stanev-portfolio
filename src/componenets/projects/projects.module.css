@@ -4,7 +4,6 @@
     align-items: center;
     margin-top: 5vh;
     padding: 0 2vw;
-    background: url('/textures/noise-light.png'); /* Use a subtle PNG noise */
     background-size: cover;
     font-family: 'Inter', 'Segoe UI', sans-serif;
     color: #1e293b;

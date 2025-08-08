@@ -1,12 +1,14 @@
 import styles from './App.module.css';
 import Banner from './componenets/banner/Banner';
 import Projects from './componenets/projects/Projects';
+import Qualifications from './componenets/qualifications/qualifications';
 
 function App() {
     return (
         <main className={styles.main}>
             <Banner />
             <Projects />
+            <Qualifications />
 
             <section className={styles.section}>
                 <h2>Contact</h2>

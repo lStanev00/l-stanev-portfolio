@@ -18,7 +18,7 @@ export default function PvPScalpel() {
                             <li><strong>Lua Addon Integration</strong> – In-game addon collects match stats (damage, healing, MMR, etc.) and syncs them with the backend.</li>
                             <li><strong>Tech Stack</strong> – React (SPA), Express.js, MongoDB, and Blizzard’s API.</li>
                             <li><strong>Performance-Optimized</strong> – Features in-memory caching and indexed database queries for fast, efficient access.</li>
-                            <li><strong>Codebase Size</strong> – ~11,500 lines of code across the frontend and backend</li>
+                            <li><strong>Codebase Size</strong> – ~11,500 handwriten lines of code across the frontend and backend</li>
                         </ul>
 
                         <p>This project demonstrates my full-stack engineering skills, from secure user authentication and game API integration to frontend UX and backend performance optimization.</p>

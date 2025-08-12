@@ -17,3 +17,5 @@ export default function Qualifications() {
     </div>
     )
 }
+
+Qualifications.getName = () => "Qualifications"

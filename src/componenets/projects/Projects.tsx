@@ -28,3 +28,5 @@ export default function Projects() {
         </div>
     )
 }
+
+Projects.getName = () => "Projects"

@@ -1,25 +1,12 @@
 import styles from './App.module.css';
 import Banner from './componenets/banner/Banner';
 import CoreWrapper from './componenets/core-wrapper/CoreWrapper';
-import Projects from './componenets/projects/Projects';
-import Qualifications from './componenets/qualifications/Qualifications';
 
 function App() {
-
-    const components = [
-        Projects.getName(),
-        Qualifications.getName()
-    ]
-
     return (
         <main className={styles.main}>
             <Banner />
-            <CoreWrapper components={components}>
-
-                <Projects />
-                <Qualifications />
-
-            </CoreWrapper>
+            <CoreWrapper />
 
             <section className={styles.section}>
                 <h2>Contact</h2>

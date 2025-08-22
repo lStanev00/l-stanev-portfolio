@@ -2,9 +2,11 @@ import {useState } from "react"
 import styles from "./CoreWrapper.module.css"
 import Projects from "../projects/Projects";
 import Qualifications from "../qualifications/Qualifications";
+import AboutMe from "../about/AboutMe";
 export default function CoreWrapper() {
 
     const ChildrenArr= [
+        AboutMe,
         Projects,
         Qualifications
     ]

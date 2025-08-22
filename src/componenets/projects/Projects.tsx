@@ -29,4 +29,4 @@ export default function Projects() {
     )
 }
 
-Projects.getName = () => "Projects"
+Projects.getName = () => "Public Projects"

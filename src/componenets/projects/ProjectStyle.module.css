@@ -1,42 +1,56 @@
 .projectSection {
     width: 100%;
     max-width: 1200px;
-    margin-bottom: 5rem;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    margin: 0 auto 5rem auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     padding: 2rem;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Subtle hover lift */
 .projectSection:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .projectTitle {
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: 1.9rem;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     color: #0f172a;
+    position: relative;
+}
+
+/* Decorative underline */
+.projectTitle::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #0ea5e9;
+    margin: 0.6rem auto 0;
+    border-radius: 2px;
 }
 
 .projectBody {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 2.5rem;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .projectDescription {
-    flex: 1 1 300px;
+    flex: 1 1 320px;
     max-width: 600px;
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.75;
     color: #334155;
+    animation: fadeInUp 0.6s ease;
 }
 
 .projectDescription ul {
@@ -49,16 +63,7 @@
     margin-bottom: 1rem;
 }
 
-.videoWidget {
-    flex: 1 1 300px;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    align-self: center;
-}
-
+/* Styled links as buttons */
 .projectDescription a {
     display: inline-block;
     margin-right: 1rem;
@@ -67,16 +72,39 @@
     font-size: 0.95rem;
     font-weight: 500;
     color: #fff;
-    background-color: #0ea5e9;
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
     border-radius: 8px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .projectDescription a:hover {
-    background-color: #0284c7;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Video styling */
+.videoWidget {
+    flex: 1 1 320px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    align-self: center;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -86,10 +114,10 @@
     }
 
     .projectTitle {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .videoWidget {
-        max-width: 90vw;
+        max-width: 95vw;
     }
 }

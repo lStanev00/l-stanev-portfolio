@@ -15,14 +15,23 @@ export default function CoreWrapper() {
     return(
     <section className={styles.mainSection}>
 
-        {ChildrenArr && ChildrenArr.map((Element, i) => (
-            <button 
-                key={Element.getName() + i}
-                onClick={() => setViewIndex(i)}
-            >
+        <div className={styles.buttonSection}>
+
+            {ChildrenArr && ChildrenArr.map((Element, i) => (
+
+                <button 
+                    key={Element.getName() + i}
+                    onClick={() => setViewIndex(i)}
+                    className={viewIndex === i ? styles.active : ""}
+                >
+
                     {Element.getName()}
-            </button>
+
+                </button>
+
             ))}
+
+        </div>
 
         <ComponentInView />
     </section>

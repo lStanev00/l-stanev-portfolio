@@ -13,7 +13,7 @@ export default function SEO({ children }: ParentProps) {
             <meta name="description" content="Portfolio of Lachezar Stanev, full-stack developer specializing in React and Node.js." />
             <meta name="keywords" content="React, Node.js, full-stack developer, portfolio" />
             <meta name="author" content="Lachezar Stanev" />
-            <link rel="canonical" href="https://yourwebsite.com/" />
+            <link rel="canonical" href="https://lstanev.dev/" />
             <meta property="og:title" content="Lachezar Stanev - Full-stack Developer" />
             <meta property="og:description" content="Portfolio of Lachezar Stanev, full-stack developer specializing in React and Node.js." />
             <meta property="og:image" content="/pictures/me" />

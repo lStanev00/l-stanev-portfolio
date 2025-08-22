@@ -27,11 +27,15 @@ export default function PvPScalpel() {
                         <a href="https://github.com/lStanev00/PvP-Scalpel-FrontEnd">Frontend Public Repo</a>
                     </div>
 
-                    <video
-                        src="/video/PvP-Scalpel.mp4"
-                        controls
+                    <iframe
                         className={styles.videoWidget}
-                    />
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/ONIi5tzaEMk"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                    ></iframe>
 
                 </div>
             </div>

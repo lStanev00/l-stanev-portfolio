@@ -21,11 +21,16 @@ export default function ShopifyWidget () {
                         <p>Ideal for store owners who want to boost conversions with a richer product experience while maintaining flexibility across custom storefronts.</p>
                     </div>
 
-                    <video
-                        src="/video/shopify-widget.mp4"
-                        controls
-                        className={styles.videoWidget}
-                    />
+                <iframe
+                  className={styles.videoWidget}
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/F0JYUc8DGsY"
+                  title="Shopify Widget Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+
 
                 </div>
             </div>

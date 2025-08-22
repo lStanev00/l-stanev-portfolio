@@ -16,7 +16,7 @@ export default function SEO({ children }: ParentProps) {
             <link rel="canonical" href="https://yourwebsite.com/" />
             <meta property="og:title" content="Lachezar Stanev - Full-stack Developer" />
             <meta property="og:description" content="Portfolio of Lachezar Stanev, full-stack developer specializing in React and Node.js." />
-            <meta property="og:image" content="https://yourwebsite.com/social-preview.png" />
+            <meta property="og:image" content="/pictures/me" />
 
 
             <script type="application/ld+json">

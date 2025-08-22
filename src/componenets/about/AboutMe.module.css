@@ -1,0 +1,74 @@
+.aboutSection {
+    width: 100%;
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.aboutTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.aboutTitle::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #0ea5e9;
+    margin: 0.6rem auto 0;
+    border-radius: 2px;
+}
+
+.aboutText {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 1rem;
+}
+
+.ctaButtons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 600;
+}
+
+.ctaButtons a {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ctaButtons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .aboutSection {
+        padding: 1.5rem;
+    }
+
+    .aboutTitle {
+        font-size: 1.7rem;
+    }
+
+    .aboutText {
+        font-size: 0.95rem;
+    }
+}

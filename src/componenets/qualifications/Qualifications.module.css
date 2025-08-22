@@ -1,55 +1,84 @@
 .qualificationsSection {
-    padding: 1.5rem 2rem;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    max-width: 800px;
-    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift effect */
+.qualificationsSection:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 .qualificationsSection h1 {
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
+    font-size: 1.9rem;
     font-weight: 700;
-    font-size: 1.5rem;
-    color: #284368;
-    border-bottom: 2px solid #d5dde7;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+    position: relative;
 }
 
+/* Decorative underline */
+.qualificationsSection h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #0ea5e9;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* List styling */
 .qualificationsList {
     list-style: none;
-    margin: 0;
     padding: 0;
-}
-
-.qualificationsList li {
+    margin: 0;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 0;
-    border-bottom: 1px solid #e0e6ee;
+    flex-direction: column;
+    gap: 0.9rem;
 }
 
-.qualificationsList li:last-child {
-    border-bottom: none;
-}
-
-.qualificationsList li::before {
-    content: "•";
-    color: #284368;
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
-.qualificationsList a {
-    color: #284368;
-    font-weight: 500;
+/* Links styled as resume items */
+.qualificationsList li a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    background: #f1f5f9;
+    border-radius: 10px;
     text-decoration: none;
-    transition: color 0.2s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1e293b;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
-.qualificationsList a:hover {
-    color: #1a2c4b;
-    text-decoration: underline;
+/* Hover effect */
+.qualificationsList li a:hover {
+    background: #0ea5e9;
+    color: #fff;
+    transform: translateX(6px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .qualificationsSection {
+        padding: 1.5rem;
+    }
+
+    .qualificationsSection h1 {
+        font-size: 1.6rem;
+    }
+
+    .qualificationsList li a {
+        font-size: 0.95rem;
+        padding: 0.7rem 1rem;
+    }
 }

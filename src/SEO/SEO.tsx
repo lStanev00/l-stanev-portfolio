@@ -10,13 +10,12 @@ export default function SEO({ children }: ParentProps) {
     return (<>
         <Helmet>
             <title>Lachezar Stanev - Full-stack Developer</title>
-            <meta name="description" content="Portfolio of Lachezar Stanev, full-stack developer specializing in React and Node.js." />
-            <meta name="keywords" content="React, Node.js, full-stack developer, portfolio" />
+            <meta name="description" content="Portfolio of Lachezar Stanev, full-stack developer specializing in React, Node.js, Desctop Applications via Tauri (Rust + React)." />
+            <meta name="keywords" content="React, Node.js, full-stack developer, portfolio, Lachezar Stanev, Лъчезар Станев, Freelance, Developer, Tauri, MERN, MongoDB, Cloud developer, DEVOPS" />
             <meta name="author" content="Lachezar Stanev" />
             <link rel="canonical" href="https://lstanev.dev/" />
-            <meta property="og:title" content="Lachezar Stanev - Full-stack Developer" />
+            <meta property="og:title" content="Stanev's Hub" />
             <meta property="og:description" content="Portfolio of Lachezar Stanev, full-stack developer specializing in React and Node.js." />
-            <meta property="og:image" content="/pictures/me" />
 
 
             <script type="application/ld+json">

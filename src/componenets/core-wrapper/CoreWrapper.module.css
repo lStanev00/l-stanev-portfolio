@@ -41,6 +41,59 @@
     background: #fff;
 }
 
-.mainSection > *:last-child {
-    padding: 1.5rem;
+
+/* Mobile view */
+
+@media (max-width: 1200px) {
+    .mainSection {
+
+        width: 95vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainSection {
+        margin-top: 5rem;
+        border-radius: 0.5rem;
+    }
+
+    .buttonSection {
+        flex-direction: column;
+        border-bottom: none;
+        border-right: 2px solid #eee;
+        background: #fdfdfd;
+    }
+
+    .buttonSection button {
+        width: 100%;
+        min-width: unset;
+        height: 48px;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+        padding: 0 1.2rem;
+    }
+
+    .buttonSection button.active {
+        border-right: 4px solid #007bff;
+        border-bottom: none;
+        background: #fff;
+        color: #111;
+    }
+
+    .mainSection > *:last-child {
+        padding-bottom: 1rem;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+    .mainSection {
+        margin-top: 5rem;
+        box-shadow: none;
+    }
+
+    .buttonSection button {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
 }

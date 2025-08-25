@@ -1,9 +1,13 @@
 .aboutSection {
-    width: 100%;
+    width: 85%;
     max-width: 900px;
-    margin: 4rem auto;
-    padding: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 .aboutTitle {
@@ -29,6 +33,7 @@
     line-height: 1.7;
     color: #334155;
     margin-bottom: 1rem;
+    text-wrap: wrap;
 }
 
 .ctaButtons {
@@ -60,15 +65,55 @@
 
 /* Responsive */
 @media (max-width: 600px) {
-    .aboutSection {
-        padding: 1.5rem;
-    }
-
     .aboutTitle {
         font-size: 1.7rem;
     }
 
     .aboutText {
         font-size: 0.95rem;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1008px) {
+    .aboutTitle {
+        font-size: 1.8rem;
+    }
+
+    .aboutText {
+        font-size: 1rem;
+        line-height: 1.6;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-wrap: break-word;
+    }
+}
+
+/* Phone adjustments */
+@media (max-width: 480px) {
+    .aboutTitle {
+        font-size: 1.5rem;
+    }
+
+    .aboutTitle::after {
+        width: 50px;
+        height: 2px;
+    }
+
+    .aboutText {
+        font-size: 0.9rem;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .ctaButtons a {
+        width: 50%;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
     }
 }

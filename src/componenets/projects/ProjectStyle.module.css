@@ -121,3 +121,58 @@
         max-width: 95vw;
     }
 }
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .projectSection {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        transition: unset;
+        border-radius: unset;
+        box-shadow: unset;
+    }
+
+    .projectSection:hover{
+        transform: unset;
+        box-shadow: unset;
+        
+    }
+
+    .projectTitle {
+        font-size: 1.3rem;
+    }
+
+    .projectTitle::after {
+        width: 40px;
+        height: 2px;
+    }
+
+    .projectBody {
+        gap: 1.5rem;
+        align-items: center;
+        padding: 00;
+    }
+
+    .projectDescription {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        padding: 0 0.5rem;
+    }
+
+    .projectDescription a {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        margin-top: 0.6rem;
+        border-radius: 6px;
+    }
+
+    .videoWidget {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+        align-self: center;
+        margin: 0;
+    }
+}
+

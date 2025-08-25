@@ -1,12 +1,17 @@
 .qualificationsSection {
     width: 100%;
-    max-width: 900px;
-    margin: 4rem auto;
+    max-width: 600px;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
     border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    margin: 3rem auto;
 }
 
 /* Hover lift effect */
@@ -19,7 +24,7 @@
     font-size: 1.9rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
     color: #0f172a;
     position: relative;
 }
@@ -31,7 +36,7 @@
     width: 70px;
     height: 3px;
     background: #0ea5e9;
-    margin: 0.5rem auto 0;
+    margin: 0.6rem auto 0;
     border-radius: 2px;
 }
 
@@ -42,43 +47,85 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 1rem;
 }
 
-/* Links styled as resume items */
 .qualificationsList li a {
     display: block;
-    padding: 0.8rem 1.2rem;
+    padding: 0.85rem 1.2rem;
     background: #f1f5f9;
     border-radius: 10px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     color: #1e293b;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
 
-/* Hover effect */
+/* Hover effect with gradient */
 .qualificationsList li a:hover {
-    background: #0ea5e9;
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
     color: #fff;
     transform: translateX(6px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
     .qualificationsSection {
+        margin: 2rem 1rem;
         padding: 1.5rem;
     }
 
     .qualificationsSection h1 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+    }
+
+    .qualificationsList {
+        gap: 0.8rem;
     }
 
     .qualificationsList li a {
         font-size: 0.95rem;
-        padding: 0.7rem 1rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Responsive for small phones */
+@media (max-width: 480px) {
+    .qualificationsSection {
+        margin: 1.5rem 0.5rem;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .qualificationsSection h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .qualificationsList {
+        gap: 0.7rem;
+    }
+
+    .qualificationsList li a {
+        font-size: 0.9rem;
+        padding: 0.65rem 0.85rem;
+        text-align: center;
     }
 }
